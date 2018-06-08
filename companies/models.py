@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 from uuid import uuid4
+from kinds_companies.models import Kind_Company
 
 def create_id():
     now = datetime.datetime.now()
@@ -17,7 +18,7 @@ class Company(models.Model):
     lat = models.CharField(max_length=200,null= True)
     lon = models.CharField(max_length=200,null= True)
     service_hour = models.CharField(max_length=200,null= True)
-    type_company = models.CharField(max_length=200,null= True)
+    type_company = models.ForeignKey(Kind_Company,on_delete=models.CASCADE)
     
     def __str__(self):
         return self.id_company
