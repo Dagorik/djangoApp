@@ -1,2 +1,2 @@
-web: gunicorn mysite.wsgi --log-file -
+web: gunicorn pozarica.wsgi --log-file -
 
