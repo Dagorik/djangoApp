@@ -15,4 +15,4 @@ class Kind_Company(models.Model):
     image = models.CharField(max_length=200)
     
     def __str__(self):
-        return self.id_kind
+        return self.name

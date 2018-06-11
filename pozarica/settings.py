@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'kinds_companies',
-    'companies'
+    'companies',
+    'clients',
+    'reports'
     
 ]
 

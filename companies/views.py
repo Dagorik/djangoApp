@@ -12,7 +12,7 @@ class ListCompanies(APIView):
         serializer = CompanySerializer(company, many = True)
         return Response(serializer.data,status=status.HTTP_200_OK)
 
-    def post(slef,request):
+    def post(self,request):
         serializer = CompanySerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
