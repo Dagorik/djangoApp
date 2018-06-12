@@ -5,8 +5,3 @@ class ClientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Client
         fields = '__all__'
-
-class DevicedIdSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Client
-        fields = ('device_id')
