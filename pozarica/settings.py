@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'kinds_companies',
     'companies',
     'clients',
-    'reports'
+    'reports',
+    'promotions'
     
 ]
 
