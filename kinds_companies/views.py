@@ -31,7 +31,6 @@ class ViewKindsCompaneis(APIView):
 
     def get(self,request,pk):
         kind_company = self._getCompanies(pk)
-        print('AQIOOOO',kind_company)
         serializer = CompanySerializer(kind_company,many= True)
         return Response(serializer.data, status = status.HTTP_200_OK)
 
